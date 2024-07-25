@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route("/", strict_slashes=False)
 def hello_HBNB():
     """Route handler for the root URL. returns Hello HBNB!$"""
-    return "Hello HBNB!$"
+    return "Hello HBNB!"
 
 
 if __name__ == '__main__':
