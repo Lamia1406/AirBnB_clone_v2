@@ -6,6 +6,12 @@ from models.state import State
 app = Flask(__name__)
 
 
+@app.teardown_appcontext
+def close_session(error):
+    """Remove the current Session"""
+    storage.close()
+
+
 @app.route('/states_list', strict_slashes=False)
 def display_states():
     """
