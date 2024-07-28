@@ -16,4 +16,3 @@ class City(BaseModel, Base):
             "Place",
             cascade='all, delete, delete-orphan',
             backref="cities")
-    state = relationship("State", back_populates="cities")
