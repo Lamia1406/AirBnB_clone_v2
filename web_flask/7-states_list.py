@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Flask web application module."""
+"""Flask web application module. the module is documented"""
 from flask import Flask, render_template
 from models import storage
 from models.state import State
